@@ -1,0 +1,20 @@
+@import "../valo/valo.scss";
+
+$gray: #d1d1cf;
+$green: #40b527;
+$darkgreen: darken($green, 30%);
+
+// Prefix all selectors in your theme with .demo
+.demo {
+
+	// Include valo theme styles in demo theme
+	@include valo;
+
+        // Disable cell focus feature in Grid. It's disturbing.
+        // (nothing to do with the add-on, it's just my personal preference)
+        .v-grid-cell-focused:before {
+            display: none !important;
+        }
+        
+        
+}

@@ -1,0 +1,7 @@
+/demo/target/
+/addon/target/
+/target/
+/demo/nb-configuration.xml
+/addon/nb-configuration.xml
+nbactions.xml
+nb-configuration.xml

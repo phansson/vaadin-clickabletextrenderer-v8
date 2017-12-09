@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.vaadin.community.addon</groupId>
+    <artifactId>clickabletextrenderer-v8-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>Vaadin - ClickableTextRenderer v8 Add-on Root</name>
+
+    <prerequisites>
+        <maven>3</maven>
+    </prerequisites>
+
+    <modules>
+        <module>addon</module>
+        <module>demo</module>
+    </modules>
+    
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <netbeans.hint.license>apache20</netbeans.hint.license> <!-- ignored outside of NetBeans IDE -->
+        <vaadin.version>8.1.7</vaadin.version>
+        <vaadin.plugin.version>8.1.7</vaadin.plugin.version>
+    </properties>
+
+
+    <organization>
+        <name>Vaadin Community</name>
+    </organization>
+    <url>https://github.com/phansson/vaadin-clickabletextrenderer-v8</url>
+    
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    
+    <scm> 
+        <connection>scm:git:https://github.com/phansson/vaadin-clickabletextrenderer-v8</connection> 
+        <developerConnection>scm:git:https://github.com/phansson/vaadin-clickabletextrenderer-v8</developerConnection> 
+        <url>https://github.com/phansson/vaadin--clickabletextrenderer-v8</url> 
+    </scm>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <goals>install</goals>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>
