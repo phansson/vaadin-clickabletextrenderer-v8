@@ -19,8 +19,8 @@ like this:
 ```java
 // Define what to do when clicked
 ClickableRenderer.RendererClickListener myListener
-        = (ClickableRenderer.RendererClickEvent event) -> {
-            // Do something here. Use event.getItemId() to figure out
+        = (ClickableRenderer.RendererClickEvent<YourGridClass> event) -> {
+            // Do something here. Use event.getItem() to figure out
             // which row was clicked.
         };
 
